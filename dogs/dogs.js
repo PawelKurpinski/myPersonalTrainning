@@ -19,7 +19,7 @@ this.weight = weight;
      Dog.prototype.run = function(){
          console.log("Biega!");
      };
-
+     
      Dog.prototype.wag = function(){
          console.log("Merda ogonem!");
      };
