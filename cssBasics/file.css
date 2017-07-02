@@ -1,0 +1,15 @@
+h1 {
+    color: aquamarine;
+}
+li {
+    color: rgba(11, 99, 200, .5);
+}
+div {
+    background: rgba(50, 207, 178);
+}
+body{
+    background: bisque;
+}
+h4{
+    background: gray;
+}

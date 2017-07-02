@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <form method="post">
-            <label>
-                Text:
-            <input type="text">
-            </label>
-            <label>
-                Password:
-            <input placeholder="TEST" type="password"required>
-            </label>
-            <input type="text" value="TEST">
-            <input type="submit"value="Submit">
-        </form>
 
-        <form name="myForm" method="post">
-            <h2>Register</h2>
-            <label for="first">First Name:</label>
-            <input type="text" id="firstName" placeholder="John"required>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lasntName" placeholder="Smith"required>
-            <br>
+<head>
+    <meta charset="utf-8">
+    <title>My First Form</title>
+</head>
+
+<body>
+    <form method="post">
+        <label>
+            Text:
+            <input type="text">
+            Password:
+            <input placeholder="TEST" type="password"required>
+        </label>
+        <div>    
+            <input type="text" value="TEST">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <form name="myForm" method="post">
+        <h2>Register</h2>
+        <label for="first">First Name:</label>
+        <input type="text" id="firstName" placeholder="John" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lasntName" placeholder="Smith" required>
+        <div>
             <label>Male<input type="radio" name="male"></label>
             <label>Female<input type="radio" name="male"></label>
             <label>Other<input type="radio" name="male"></label>
-            <br>
-            <label>Email:</label>
-            <input type="email" maxlength="10" min="5">
-            <br>
-            <select name="myList">
+        </div>
+        <div>
+            <label>
+            Email:
+            <input type="email" minlength="5" maxlength="10" required>
+            </label>
+
+            <label>Password:
+            <input type="password" pattern=".{5,10}" required title="5 to 10 characters">
+            </label>
+        </div>
+        <label for="birthday">Birthday:</label>
+            <select id="birthday" name="myList">
                 <option >Month</option>
                 <option >January</option>
                 <option >February</option>
-
             </select>
 
-            <input type="submit" value="Submit">
-        </form>
+            <select id="day" name="myDay">
+                <option >Day</option>
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+            </select>
+        <br> I agree to the terms and conditions <input type="checkbox">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 
-    </body>
+</body>
+
 </html>
