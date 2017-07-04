@@ -15,11 +15,11 @@ h2{
 }
 /* Make all <li> elements blue(pick your own hexadecimal blue)*/
 li{
-    color: #1297ec;
+    color: #0040FF;
 }
 /*Change the background on every paragraph to be yellow*/
 p{
-    background-color: yellow;
+    background: yellow;
 }
 /*Make all inputs have a 3px red border*/
 input{
